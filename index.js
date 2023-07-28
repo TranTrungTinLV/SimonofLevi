@@ -50,14 +50,16 @@ function checkAnswer(currentLevel) {
         document.querySelector('.container').style.opacity = 0;
         document.querySelector('h1').style.opacity = 0;
         document.getElementById('level-title').textContent = 'Game Over, Please try again!';
+        
         setTimeout(function () {
             document.body.classList.remove("game-over");
             document.querySelector('.container').style.opacity = 1;
             document.querySelector('h1').style.opacity = 1;
         }, 3000);
         // document.querySelector('.container').style.opacity = 1;
-
         startOver();
+        showStartPopup();
+
     }
 }
 

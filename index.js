@@ -33,7 +33,7 @@ for (var i = 0; i < button.length; i++) {
 
 
 function PlaySound(name) {
-    var audio = new Audio("sound/" + name + ".mp3");
+    var audio = new Audio(name + ".mp3");
     audio.play();
 }
 
